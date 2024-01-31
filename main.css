@@ -1,0 +1,95 @@
+/* Main parts of page */
+body{
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, serif;
+    color: #FFA07A;
+    background-color: #6b778d;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Main Navigation */
+nav li {
+    border: 1px solid #FFDAB9;
+    display: inline-block;
+    padding: 1px;
+    margin: 1px 5px;
+    border-radius: 4px;
+    a {
+        display: inline-block;
+        text-decoration: none;
+        color: #FFFDD0;
+    }
+    a:hover {
+        background-color: #FFFDD0;
+        color: #495268;
+        font-style: italic;
+    }
+}
+
+/* Active link */
+nav li.active a{
+    color: #FFA07A;
+    display: inline-block;
+}
+
+/* Active link color */
+nav li.active a:hover{
+    color: #495268;
+}
+
+/* Styling header/footer color */
+header, footer {
+    background: #495268;
+}
+
+/* Footer navigation */
+footer {
+    margin-top: auto; /* Keep footer at bottom of page */
+    nav {
+        text-align: center;
+        li {
+            border: none;
+            border-radius: 0;
+            border-bottom: 2px solid #FFDAB9;
+            margin: 0 30px
+        }
+    }
+}
+
+/* Social media links */
+footer nav.social-media li{
+    border: none;
+    border-bottom: 1px solid #FFDAB9;
+    margin: 0 30px;
+}
+
+/* Style links in text */
+a.link {
+    color: #FFA07A;
+}
+
+/* Style elements in lists */
+div li{
+    color: #FFFDD0;
+}
+
+/* Styling text color in bullets and descriptions */
+p.description {
+    color:#FFFDD0;
+    margin: 0 10px 20px 20px;
+    display: inline-block;
+    width: 75%;
+}
+
+/* Style images and videos for Projects page */
+img, video {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    max-width: 100%;
+    height: auto;
+}
+
